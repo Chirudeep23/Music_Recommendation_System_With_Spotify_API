@@ -41,8 +41,8 @@ def recommend(song):
 
 st.header('Music Recommendation System')
 #Loading The Dumped Pickle File into Webapp
-music = pickle.load(open(r'C:\Users\DELL\OneDrive\Desktop\Music_Rec\df.pkl','rb'))
-similarity = pickle.load(open(r'C:\Users\DELL\OneDrive\Desktop\Music_Rec\similarity.pkl','rb'))
+music = pickle.load(open('df.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 #Creating a dropdown menu for selecting songs from the dataset
 music_list = music['song'].values
